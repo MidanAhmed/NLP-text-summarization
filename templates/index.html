@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h2>Text summarization based on Extractive method</h2>
+		</div>
+	</header>
+	<div class="main">
+		<div class="ml-container">
+			<form action="{{ url_for('summarize')}}" method="POST">
+				<p>Enter the original text here</p>
+				<textarea name="originalText" id="org-text" required>{{passage}}</textarea>
+				<p>Enter the number of lines required in summary</p>
+				<input name="numOfLines" type="text" class="tinp"></input>
+				<input type="submit" class="btn" value="Summarize">
+			</form>
+		</div>
+		<div style="display: flex;align-items: center;justify-content: center;">
+			<p style="font-size: large;font-weight: bold;">OR</p>
+		</div>
+		<div class="ml-container">
+			<input type="file" accept="image/*" onchange="loadFile(event)">
+			<p><img id="output" class="outimg" /></p>
+			<form action="{{ url_for('extract') }}">
+				<button class="btn" style="margin-top:2% ;">Extract Text</button>
+			</form>
+		</div>
+	</div>
+	<script>
+		var loadFile = function (e) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(e.target.files[0]);
+			document.cookie = `name=${e.target.files[0].name}`;
+		};
+	</script>
+</body>
+
+</html>
