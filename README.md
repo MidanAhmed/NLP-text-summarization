@@ -34,9 +34,9 @@ In this GUI, we can type a passage or upload an image which then returns us the 
 
 ## Screenshots
 
-![App Screenshot](/Screenshot (3).png)
+![App Screenshot](https://github.com/MidanAhmed/NLP-text-summarization/blob/1228185171c855790d5e88c190b22c3ecdaf5ee6/Screenshot%20(3).png)
 
-![App Screenshot 1](/Screenshot (4).png)
+![App Screenshot 1](https://github.com/MidanAhmed/NLP-text-summarization/blob/1228185171c855790d5e88c190b22c3ecdaf5ee6/Screenshot%20(4).png)
 
 
 ## Tech Stack Used
