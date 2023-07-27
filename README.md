@@ -34,9 +34,9 @@ In this GUI, we can type a passage or upload an image which then returns us the 
 
 ## Screenshots
 
-![App Screenshot](Screenshot (3).png)
+![App Screenshot](/Screenshot (3).png)
 
-![App Screenshot 1](Screenshot (4).png)
+![App Screenshot 1](/Screenshot (4).png)
 
 
 ## Tech Stack Used
